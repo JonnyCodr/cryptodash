@@ -1,5 +1,8 @@
 import React from 'react';
 
+const cc = require('cryptocompare');
+
+
 export const AppContext = React.createContext();
 
 const MAX_FAVORITES = 10;
