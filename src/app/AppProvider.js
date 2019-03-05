@@ -19,6 +19,15 @@ export class AppProvider extends React.Component {
         }
     }
 
+    componentDidMount = () => {
+        this.fetchCoins();
+    };
+
+    fetchCoins = async  () => {
+        let coinList = (await cc.coinList()).Data;
+        this.setState({coinList});
+    };
+
 
     setPage = page => this.setState({page});
 
