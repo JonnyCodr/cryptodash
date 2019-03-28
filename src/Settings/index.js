@@ -3,6 +3,7 @@ import WelcomeMessage from './WelcomeMessage';
 import ConfirmButton from './ConfirmButton'
 
 import Page from '../shared/Page';
+import CoinGrid from './CoinGrid';
 
 
 const Settings = () => {
@@ -10,6 +11,7 @@ const Settings = () => {
         <Page name="settings">
             <WelcomeMessage/>
             <ConfirmButton/>
+            <CoinGrid/>
         </Page>
     )
 };
